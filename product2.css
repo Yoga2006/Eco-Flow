@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.navbar .logo-img {
+    width: 40px;
+    height: 40px;
+    
+}
+.navbar h1 {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #4CAF50;
+    border-radius: 4px;
+}
+
+/* Product Details Section */
+.product-details {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.product-details img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.product-details p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.product-details .cta-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    margin-top: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.product-details .cta-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar nav ul {
+        margin-top: 10px;
+    }
+
+    .product-details {
+        padding: 20px;
+    }
+
+    .product-details h2 {
+        font-size: 28px;
+    }
+
+    .product-details img {
+        max-width: 100%;
+    }
+
+    .product-details .cta-btn {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}

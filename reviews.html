@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - EcoFlow</title>
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">EcoFlow</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="reviews.html" class="active">Customer Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>What Our Customers Say</h1>
+            <p>Discover how EcoFlow has changed the way people think about water purification.</p>
+            <a href="index.html" class="cta-btn">Back to Home</a>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="review-cards">
+                <!-- Sample review cards (dynamic content will be added) -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">John Doe</span>
+                        <span class="review-stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="review-text">"EcoFlow is a game-changer! It’s efficient, easy to use, and the water tastes amazing."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">Jane Smith</span>
+                        <span class="review-stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="review-text">"I love the energy efficiency of EcoFlow. It’s the perfect solution for my home!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit a Review Section -->
+    <section class="submit-review">
+        <div class="container">
+            <h2>Submit Your Review</h2>
+            <form id="review-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="review-text">Your Review:</label>
+                <textarea id="review-text" name="review-text" required></textarea>
+
+                <label for="stars">Rating:</label>
+                <select id="stars" name="stars">
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EcoFlow. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="reviews.js"></script>
+</body>
+</html>

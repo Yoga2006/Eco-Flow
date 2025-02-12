@@ -1,0 +1,136 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top,rgb(16, 238, 238),rgb(0, 145, 255)); /* Light grey background for a soft look */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-image: linear-gradient(to top,rgb(255, 255, 255),rgb(24, 107, 196));
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Header Section */
+header {
+    background-image: linear-gradient(to top,rgb(0, 145, 255)); /* Success Green */
+    color: rgb(239, 243, 250);
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Header Animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: zoomIn 1s ease-out;
+}
+
+/* Heading Animation */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Paragraph */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Paragraph Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Call to Action Button */
+.cta-btn {
+    display: inline-block;
+    background-color: #007bff; /* Blue */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Button Hover Effect */
+.cta-btn:hover {
+    background-color: #0056b3; /* Darker Blue */
+    transform: scale(1.05);
+}
+
+/* Button Active Effect */
+.cta-btn:active {
+    transform: scale(0.98);
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #777;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Footer Animation */
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations for fade-in effects */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
